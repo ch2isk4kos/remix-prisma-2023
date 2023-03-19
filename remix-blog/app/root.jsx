@@ -1,5 +1,5 @@
-import Document from "./components/Document";
-import Layout from "./components/Layout";
+import Document from "./components/layouts/Document";
+import Layout from "./components/layouts/Layout";
 import { Outlet } from "@remix-run/react";
 
 export const meta = () => ({
