@@ -22,9 +22,9 @@ export default function App() {
       </head>
       <body>
         <Outlet />
+        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );
