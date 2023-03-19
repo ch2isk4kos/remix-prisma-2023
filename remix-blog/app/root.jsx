@@ -1,6 +1,7 @@
 import Document from "./components/layouts/Document";
 import Layout from "./components/layouts/Layout";
 import { Outlet } from "@remix-run/react";
+import globalStyles from "./styles/global.css";
 
 export const meta = () => ({
   charset: "utf-8",
@@ -16,4 +17,8 @@ export default function App() {
       </Layout>
     </Document>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: globalStyles }];
 }
