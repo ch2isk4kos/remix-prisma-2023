@@ -1,11 +1,6 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import Document from "./components/Document";
+import Layout from "./components/Layout";
+import { Outlet } from "@remix-run/react";
 
 export const meta = () => ({
   charset: "utf-8",
@@ -15,17 +10,10 @@ export const meta = () => ({
 
 export default function App() {
   return (
-    <html lang="en">
-      <head>
-        <Meta />
-        <Links />
-      </head>
-      <body>
+    <Document>
+      <Layout>
         <Outlet />
-        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+      </Layout>
+    </Document>
   );
 }
