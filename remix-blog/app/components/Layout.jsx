@@ -1,6 +1,4 @@
-import Link from "@remix-run/react";
-
-// import { Link } from "remix";
+import { Link } from "@remix-run/react";
 
 export default function Layout({ children }) {
   return (
