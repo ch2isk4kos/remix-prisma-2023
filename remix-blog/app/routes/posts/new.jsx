@@ -1,8 +1,7 @@
-// import { Link } from "@remix-run/react";
-
 export default function NewPost() {
   return (
     <form method="post" className="NewPost">
+      <h2>Create a Post</h2>
       <p>
         <label htmlFor="title">Title</label>
         <input type="text" id="title" name="title" required />
