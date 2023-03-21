@@ -1,14 +1,9 @@
 import { Outlet } from "@remix-run/react";
-import styles from "../styles/posts.css";
 
-export default function Posts() {
+export default function PostsContainer() {
   return (
-    <main className="Posts">
+    <main>
       <Outlet />
     </main>
   );
-}
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
 }
