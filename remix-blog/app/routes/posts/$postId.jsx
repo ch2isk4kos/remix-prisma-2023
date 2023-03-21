@@ -6,8 +6,6 @@ export default function Post() {
   return (
     <div className="Post">
       <h2>Post {params.postId}</h2>
-      {/*  */}
-      {/*  */}
     </div>
   );
 }
