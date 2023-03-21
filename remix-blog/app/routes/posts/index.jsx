@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { useLoaderData } from "react-router";
+import styles from "../../styles/posts/index.css";
 
 export const loader = () => {
   const data = {
@@ -9,15 +10,14 @@ export const loader = () => {
       { id: "3", title: "Post 3", body: "And the third." },
     ],
   };
-
   return data;
 };
 
-export default function PostItems() {
+export default function Posts() {
   const { posts } = useLoaderData();
 
   return (
-    <div className="Index">
+    <div className="Posts">
       <div className="page-header">
         <h2>Posts</h2>
         <Link to="/posts/new" className="new-post-btn">
@@ -35,4 +35,8 @@ export default function PostItems() {
       </ul>
     </div>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
 }
