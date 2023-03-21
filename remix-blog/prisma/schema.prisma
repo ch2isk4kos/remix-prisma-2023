@@ -13,7 +13,7 @@ datasource db {
 model Post {
   id  String  @id @default(uuid())
   title String
-  body String
+  content String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
