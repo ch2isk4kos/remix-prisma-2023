@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 :root {
   --color-foreground: hsl(0, 0%, 0%);
   --color-background: hsl(0, 0%, 100%);
@@ -9,32 +11,26 @@
   --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
 }
-html {
+
+* {
   box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-html,
-body {
-  padding: 0;
   margin: 0;
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  padding: 0;
 }
+
 body {
-  font-family: var(--font-body);
-  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
+
 a {
-  color: var(--color-primary-light);
   text-decoration: none;
+  color: var(--color-primary-light);
 }
-nav {
-  border: 2px solid coral;
+
+ul {
+  list-style: none;
 }
-h1 {
-  color: coral;
+
+p {
+  margin: 10px 0;
 }
