@@ -5,7 +5,9 @@
 <p>cd <code>remix-blog</code></p>
 <p>$ <code>npm run dev</code></p>
 
-## Prisma Commansa
+<br/>
+
+## Prisma Commands
 
 <p>$ <code>npx prisma @prisma/client</code></p>
 <p>$ <code>npx prisma init --datasource-provider sqlite</code></p>
