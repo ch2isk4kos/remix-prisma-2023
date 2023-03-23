@@ -1,4 +1,4 @@
-# A Remix Application
+# A Server Side Rendering Application with Remix
 
 <br/>
 
