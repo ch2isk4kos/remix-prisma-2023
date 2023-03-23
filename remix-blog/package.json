@@ -2,6 +2,9 @@
   "private": true,
   "sideEffects": false,
   "license": "MIT",
+  "prisma": {
+    "seed": "node prisma/seed"
+  },
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
