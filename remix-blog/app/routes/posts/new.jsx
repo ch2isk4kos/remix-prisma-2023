@@ -3,7 +3,6 @@ import { redirect } from "@remix-run/node";
 import { db } from "~/utils/db.server";
 
 export const action = async ({ request }) => {
-  // console.log("request:", request);
   const form = await request.formData();
   const title = form.get("title");
   const content = form.get("content");
