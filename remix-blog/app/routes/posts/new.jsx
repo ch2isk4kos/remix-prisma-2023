@@ -4,15 +4,11 @@ import { db } from "~/utils/db.server";
 
 export const action = async ({ request }) => {
   // console.log("request:", request);
-
   const form = await request.formData();
-  console.log("form:", form);
-
   const title = form.get("title");
   const content = form.get("content");
 
   const fields = { title, content };
-  console.log("fields:", fields);
 
   // persist to database
   const post = await db.post.create({ data: fields });
