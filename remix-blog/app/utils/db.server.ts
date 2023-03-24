@@ -18,3 +18,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 export { db };
+
+/**
+ * Import this file into any route needed by the db
+ * and use the "db" variable to create, read, etc.
+ */
