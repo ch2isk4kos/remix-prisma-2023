@@ -15,8 +15,9 @@ export const action = async ({ request }) => {
   console.log("fields:", fields);
 
   // persist to database
+  const post = await db.post.create({ data: fields });
 
-  return redirect("/posts");
+  return redirect(`/posts/${post.id}`);
 };
 
 export default function NewPost() {
