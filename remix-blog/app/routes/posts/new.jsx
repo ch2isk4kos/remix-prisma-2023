@@ -14,7 +14,7 @@ export const action = async ({ request }) => {
   const fields = { title, content };
   console.log("fields:", fields);
 
-  // @TODO: submit to database
+  // persist to database
 
   return redirect("/posts");
 };
