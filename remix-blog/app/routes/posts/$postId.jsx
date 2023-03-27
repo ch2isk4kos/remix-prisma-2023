@@ -14,8 +14,10 @@ export default function Post() {
   const { post } = useLoaderData();
   return (
     <div className="Post">
-      <h2>{post.title}</h2>
-      <p>{post.content}</p>
+      <div className="post-header">
+        <h2>{post.title}</h2>
+        <p>{post.content}</p>
+      </div>
     </div>
   );
 }
