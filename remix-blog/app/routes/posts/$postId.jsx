@@ -10,6 +10,10 @@ export const loader = async ({ params }) => {
   return data;
 };
 
+export const action = async () => {
+  //
+};
+
 export default function Post() {
   const { post } = useLoaderData();
   return (
