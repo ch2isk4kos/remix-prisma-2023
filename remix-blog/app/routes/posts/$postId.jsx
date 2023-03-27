@@ -21,6 +21,13 @@ export default function Post() {
       </div>
       {/* CONTENT */}
       <div className="post-content">{post.content}</div>
+      {/* FOOTER */}
+      <div className="post-footer">
+        <form method="post">
+          <input type="hidden" name="_method" value="delete" />
+          <button>Delete</button>
+        </form>
+      </div>
     </div>
   );
 }
