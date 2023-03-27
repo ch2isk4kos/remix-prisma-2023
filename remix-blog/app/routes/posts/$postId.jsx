@@ -10,8 +10,9 @@ export const loader = async ({ params }) => {
   return data;
 };
 
-export const action = async () => {
+export const action = async ({ request }) => {
   //
+  const form = await request.formData();
 };
 
 export default function Post() {
