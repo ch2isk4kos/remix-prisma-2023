@@ -14,10 +14,12 @@ export default function Post() {
   const { post } = useLoaderData();
   return (
     <div className="Post">
+      {/* HEADER */}
       <div className="post-header">
         <h2>{post.title}</h2>
         <Link to="/posts">back to posts</Link>
       </div>
+      {/* CONTENT */}
       <div className="post-content">
         <p>{post.content}</p>
       </div>
