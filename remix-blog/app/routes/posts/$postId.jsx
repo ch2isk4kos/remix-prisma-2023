@@ -5,6 +5,7 @@ export const loader = async ({ params }) => {
   const post = await db.post.findUnique({
     where: { id: params.postId },
   });
+  if (!post) throw new Error("Post not found.");
 };
 
 export default function Post() {
