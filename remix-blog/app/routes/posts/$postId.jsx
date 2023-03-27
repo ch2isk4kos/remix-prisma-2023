@@ -1,5 +1,4 @@
-import { Link } from "@remix-run/react";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 
 export const loader = async ({ params }) => {
