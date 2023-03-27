@@ -20,9 +20,7 @@ export default function Post() {
         <Link to="/posts">back to posts</Link>
       </div>
       {/* CONTENT */}
-      <div className="post-content">
-        <p>{post.content}</p>
-      </div>
+      <div className="post-content">{post.content}</div>
     </div>
   );
 }
