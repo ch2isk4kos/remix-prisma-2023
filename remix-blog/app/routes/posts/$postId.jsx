@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 
@@ -16,6 +17,7 @@ export default function Post() {
     <div className="Post">
       <div className="post-header">
         <h2>{post.title}</h2>
+        <Link to="/posts">back to posts</Link>
         <p>{post.content}</p>
       </div>
     </div>
