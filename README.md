@@ -2,15 +2,18 @@
 
 <br/>
 
-<p>cd <code>remix-blog</code></p>
-<p>$ <code>npm run dev</code></p>
+### Remix Client
+
+<p>cd <code>client/</code></p>
+<p>run <code>npm run dev</code></p>
+<p>browser url <code>localhost:3000</code></p>
 
 <br/>
 
-## Prisma Commands
+### Prisma Commands
 
-<p>$ <code>npx prisma @prisma/client</code></p>
 <p>$ <code>npx prisma init --datasource-provider sqlite</code></p>
+<p>$ <code>npx prisma @prisma/client</code></p>
 <p>$ <code>npx prisma db push</code></p>
 <p>$ <code>node prisma/seed</code></p>
 <p>$ <code>npx prisma studio </code></p>
