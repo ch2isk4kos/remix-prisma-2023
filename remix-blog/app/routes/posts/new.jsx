@@ -1,5 +1,5 @@
 import { Form, Link, useActionData } from "@remix-run/react";
-import { redirect } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 import { db } from "~/utils/db.server";
 
 export const action = async ({ request }) => {
