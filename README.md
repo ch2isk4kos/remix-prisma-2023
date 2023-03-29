@@ -17,3 +17,9 @@
 <p>$ <code>npx prisma db push</code></p>
 <p>$ <code>node prisma/seed</code></p>
 <p>$ <code>npx prisma studio </code></p>
+
+<br>
+
+### Prisma Resources
+
+[Prisma CLI Reference](https://www.prisma.io/docs/reference/api-reference/command-reference)
