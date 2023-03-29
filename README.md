@@ -1,4 +1,4 @@
-# A Server Side Rendering Application with Remix
+# Remix Prisma 2023
 
 <br/>
 
