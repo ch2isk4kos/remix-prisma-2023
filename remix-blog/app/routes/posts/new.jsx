@@ -12,6 +12,7 @@ export const action = async ({ request }) => {
 };
 
 export default function NewPost() {
+  const actionData = useActionData(); // return data from an action
   return (
     <>
       {/* HEADER */}
