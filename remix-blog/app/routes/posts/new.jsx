@@ -7,6 +7,7 @@ export const action = async ({ request }) => {
   const title = form.get("title");
   const content = form.get("content");
   const fields = { title, content };
+  // VALIDATION
   const post = await db.post.create({ data: fields });
   return redirect(`/posts/${post.id}`);
 };
