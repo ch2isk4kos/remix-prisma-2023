@@ -40,7 +40,7 @@ export default function NewPost() {
               type="text"
               id="title"
               name="title"
-              defaultValue={actionData?.fields?.title}
+              defaultValue={actionData?.fields?.title} // actionData?.fields?.title -> renders on undefined error
               required
             />
             <div className="error">
@@ -54,6 +54,12 @@ export default function NewPost() {
           <div>
             <label htmlFor="content">Content</label>
             <textarea id="content" name="content" required />
+            <div className="error">
+              <p>
+                {actionData?.fieldErrors?.content &&
+                  actionData?.fieldErrors?.content}
+              </p>
+            </div>
           </div>
           {/* submit button */}
           <div>
