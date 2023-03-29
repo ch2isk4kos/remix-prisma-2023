@@ -36,7 +36,13 @@ export default function NewPost() {
           {/* title */}
           <div>
             <label htmlFor="title">Title</label>
-            <input type="text" id="title" name="title" required />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              defaultValue={actionData?.fields?.title}
+              required
+            />
             <div className="error">
               <p>
                 {actionData?.fieldErrors?.title &&
