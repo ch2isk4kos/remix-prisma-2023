@@ -9,9 +9,11 @@ async function seed() {
         "$2b$10$K7L1OJ45/4Y2nIvhRVpCe.FSmhDdWoXehVzJptJ/op0lSsvqNu/1u",
     },
   });
+
   await Promise.all(
     getPosts().map((post) => {
-      return prisma.post.create({ data: post });
+      const data = { userId: test.id, ...post };
+      return prisma.post.create({ data });
     })
   );
 }
