@@ -1,5 +1,6 @@
 import { Form, Link, useActionData } from "@remix-run/react";
 import { json, redirect } from "@remix-run/node";
+import { validateTitle, validateContent } from "~/utils/validations/post";
 import { db } from "~/utils/db.server";
 
 export const action = async ({ request }) => {
