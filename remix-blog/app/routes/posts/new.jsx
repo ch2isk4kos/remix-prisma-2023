@@ -13,6 +13,10 @@ export const action = async ({ request }) => {
     title: validateTitle(title),
     content: validateContent(content),
   };
+  if (Object.values(fieldErrors).some(Boolean)) {
+    console.log(fieldErrors);
+    return json({ fieldErrors, fields }, { status: 400 });
+  }
   const post = await db.post.create({ data: fields });
   return redirect(`/posts/${post.id}`);
 };
@@ -33,6 +37,12 @@ export default function NewPost() {
           <div>
             <label htmlFor="title">Title</label>
             <input type="text" id="title" name="title" required />
+            <div className="error">
+              <p>
+                {actionData?.fieldErrors?.title &&
+                  actionData?.fieldErrors?.title}
+              </p>
+            </div>
           </div>
           {/* content */}
           <div>
