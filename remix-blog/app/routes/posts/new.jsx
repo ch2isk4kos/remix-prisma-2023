@@ -8,6 +8,10 @@ export const action = async ({ request }) => {
   const content = form.get("content");
   const fields = { title, content };
   // VALIDATION
+  const fieldErrors = {
+    title: validateTitle(title),
+    content: validateContent(content),
+  };
   const post = await db.post.create({ data: fields });
   return redirect(`/posts/${post.id}`);
 };
