@@ -4,5 +4,6 @@ export const validateTitle = ({ title }) => {
 };
 
 export const validateContent = ({ content }) => {
-  //
+  if (typeof content !== "string" || content.length < 10)
+    return "Body must be at least 10 characters long";
 };
